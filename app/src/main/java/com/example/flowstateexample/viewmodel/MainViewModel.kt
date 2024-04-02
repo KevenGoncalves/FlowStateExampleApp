@@ -59,7 +59,7 @@ class MainViewModel : ViewModel() {
             try {
                 _response.value = ResponseHelper(
                     status = ResponseStatus.LOADING,
-//                    data = _response.value.data
+                    data = _response.value.data
                 )
 
                 val response = api.createTodo(todo)

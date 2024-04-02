@@ -80,7 +80,7 @@ fun TodoList(viewModel: MainViewModel) {
             }
 
             ResponseStatus.ERROR -> {
-                Text(text = response.message.toString())
+                Text(text = response.message ?: "An error occurred.")
             }
         }
     }
